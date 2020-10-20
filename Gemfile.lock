@@ -20,6 +20,7 @@ GEM
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.4)
     oauth2 (1.4.4)
       faraday (>= 0.8, < 2.0)
       jwt (>= 1.0, < 3.0)
@@ -35,6 +36,8 @@ GEM
     omniauth-oauth2 (1.7.0)
       oauth2 (~> 1.4)
       omniauth (~> 1.9)
+    puma (5.0.2)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -59,6 +62,7 @@ DEPENDENCIES
   httparty
   json
   omniauth-digitalocean
+  puma
   rack-ssl
   sinatra
   thin
