@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>
+      VPN Server Deployer | vpn.deploy.public.engineering
+    </title>
+    <meta name="description" content="Quickly Deploy OpenVPN Server on DigitalOcean">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://josephmarhee.com/assets/tachyons.css">
+  
+    <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+  </head>
+   <main>
+
+      <section class="phm phl-ns mw7 center pvxl">
+        <h1 class="ttu tracked">How to use your VPN Server</h1>
+        <h3 class="ttu tracked"><strong>Please allow a couple of minutes for setup to complete before proceeding.</strong></h3>
+        <p class="f4 f3-ns lh-copy measure">
+          You can find your droplet info <a href="https://cloud.digitalocean.com/droplets/<%= droplet_id %>" target="_blank">here</a>, to download your VPN client config (a one-time download), proceed here:</p>
+          </p>
+
+          <p><code>
+          <a href="http://<%= ip_address %>:10889" target="_blank">http://<%= ip_address %>:10889</a>
+          </code></p>
+         <p class="f4 f3-ns lh-copy measure">
+         Reminder: This will be available only once, and will not be retrievable through this URL after that.
+         </p>
+
+         <p class="f4 f3-ns lh-copy measure">
+         More about how this was built, and the usage, can be found <a href="https://medium.com/@jmarhee/automating-deploying-a-personal-vpn-server-on-digitalocean-f585aca396cf#.qrah4tsqn" target="_blank">here</a>. Many VPN clients can be used with this configuration file: for OS X <a href="https://www.sparklabs.com/viscosity/" target="_blank">Viscosity</a> has been known to work, <a href="https://openvpn.net/index.php/access-server/docs/admin-guides-sp-859543150/howto-connect-client-configuration/395-how-to-install-the-openvpn-client-on-windows.html" target="_blank">OpenVPN client</a> on Windows, and with the <code>openvpn</code> CLI or NetworkManager utilities in Linux.
+         </p>
