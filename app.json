@@ -1,0 +1,30 @@
+{
+  "name": "VPN Deployer Service",
+  "description": "OpenVPN Server Deployer",
+  "repository": "https://github.com/public-engineering/vpn_deployer_heroku/",
+  "logo": "https://static.vecteezy.com/system/resources/thumbnails/000/554/708/small/lock_001.jpg",
+  "keywords": ["ruby", "sinatra", "docker", "openvpn"],
+  "buildpacks": [
+	{
+		"url":"https://github.com/heroku/heroku-buildpack-ruby"
+	}
+  ],
+ "env": {
+    "client_id": {
+      "description": "DigitalOcean OAuth Client ID",
+      "required": true
+    },
+    "client_secret": {
+      "description": "DigitalOcean OAuth Client Secret.",
+      "required": true    
+    },
+    "pushover_token": {
+      "description": "Pushover Token (for Push Notifications)",
+      "required": true    
+    },
+    "pushover_secret": {
+      "description": "Pushover Secret (for Push Notifications).",
+      "required": true    
+    }
+  }
+}
